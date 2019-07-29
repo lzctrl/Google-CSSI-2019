@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Meta data -->
+  <meta charset="utf-8">
+
+  <!-- Links -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Title -->
+  <title>Home</title>
+</head>
+<body id="homePage">
+  <input type="checkbox" id="menu-toggle"/>
+  <label id="trigger" for="menu-toggle"></label>
+  <label id="burger" for="menu-toggle"></label>
+  <ul id="menu">
+    <li><a href={{goTo}}>{{status}}</a></li>
+    <!-- <li><a href="/pages/connections">Connections</a></li> -->
+    <li><a href="/pages/about">About</a></li>
+    <!-- <li> <a href="/pages/settings">Settings</a> </li> -->
+    {% if isSignedIn == True %}
+      <li> <a href="{{url}}">Log Out</a> </li>
+    {% endif %}
+  </ul>
+  <!-- The content of the home page -->
+  <div class="content centered">
+    <!-- <h1>Welcome to Your Future</h1> -->
+    <h1>Take The <span>Personality Test</span> To Find Yourself!</h1>
+    <a class="main_button" href={{main_button_url}}>{{main_button_text}}</a>
+  </div>
+</body>
+</html>

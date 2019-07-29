@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Meta data -->
+  <meta charset="utf-8">
+
+  <!-- Links -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Title -->
+  <title>Results</title>
+</head>
+<body id="resultsPage">
+  <input type="checkbox" id="menu-toggle"/>
+  <label id="trigger" for="menu-toggle"></label>
+  <label id="burger" for="menu-toggle"></label>
+  <ul id="menu">
+    <li> <a href="/">Home</a> </li>
+    <!-- <li><a href="/pages/connections">Connections</a></li> -->
+    <li><a href="/pages/about">About</a></li>
+    <!-- <li> <a href="/pages/settings">Settings</a> </li> -->
+  </ul>
+  <div class="resultsContent">
+    <div class="row">
+      <div class="col resultsHeader" style="height: 50px; width: 100%;">
+        <h1 >Your Results</h1>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <div class="interestWord colorRow">
+          <img src={{colorImage}} width="100%" alt="">
+          <h4>Color: <br><br><span style="color: {{user_color}}">{{user_color}}</span></h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="interestWord hobbies">
+          <img src={{hobbies_image}} width="100%" alt="">
+          <h4>A Hobby you may like <br><br><a href="{{hobbies_image}}" style="color: {{user_color}}">{{user_hobbies}}</a></h4>
+      </div>
+      </div>
+
+      <div class="col">
+        <div class="interestWord travel">
+          <img src={{living_and_travel_image}} width="100%" alt="">
+          <h4>Travel or Live here <br><br> <a href="{{living_and_travel_image}}" style="color: {{user_color}}">{{user_living_and_travel}}</a></h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="interestWord career">
+          <img src={{education_and_careers_image}} width="100%" alt="">
+          <h4>A future career that may suit you <br><br><a href="{{education_and_careers_image}}" style="color: {{user_color}}">{{user_education_and_careers}}</a></h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="interestWord music">
+          <img src={{music_image}}) width="100%" alt="">
+          <h4> A genre of music to explore <br><br> <a href="{{music_image}}" style="color: {{user_color}}">{{user_music}}</a></h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="interestWord connect">
+          <img src={{connect_image}}) width="100%" alt="">
+          <h4>Connect with Others!<br><br>Or<br><br><a href="/pages/personalitytest" style="color: {{user_color}}">Retake the Test</a> </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <footer>
+    <div class="row">
+      <div class="col footerCol">
+        <h4>The Team (Google CSSI) &copy; 2019. All Rights Reserved.</h4>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

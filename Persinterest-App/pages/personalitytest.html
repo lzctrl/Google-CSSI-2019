@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Meta data -->
+  <meta charset="utf-8">
+
+  <!-- Links -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Title -->
+  <title>Test</title>
+</head>
+<body id="testPage">
+  <form action="/pages/results" method="post">
+    <div class="testContent">
+      <div class="row">
+        <div class="col testHeader" style="width: 100%;">
+          <h1 >Take the Test</h1>
+          <h3>Welcome to the <span>Personality Test</span> that will tell you a little bit about yourself!
+          <br> For each <span>row</span>, select one block that is most like <span>you</span> </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col adjsSpace" style="width: 100%">
+          {%for choices1 in question1%}
+          <div class="adjectives">
+            <label>
+              <input type="radio" name = "template" value = "{{choices1}}" required/>
+              <!-- {{choices1|safe}} -->
+              <p>{{choices1|safe}}</p>
+            </label>
+          </div>
+          {%endfor%}
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col adjsSpace" style="width:100%;">
+          {%for choices2 in question2%}
+          <div class="adjectives">
+            <label>
+              <input type="radio" name = "template2" value = "{{choices2}}" required/>
+              <p>{{choices2|safe}}</p>
+            </label>
+          </div>
+          {%endfor%}
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col adjsSpace" style="width:100%;">
+          {%for choices3 in question3%}
+          <div class="adjectives">
+            <label>
+              <input type="radio" name = "template3" value = "{{choices3}}" required/>
+              <p>{{choices3|safe}}</p>
+            </label>
+          </div>
+          {%endfor%}
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col adjsSpace" style="width:100%;">
+          {%for choices4 in question4%}
+          <div class="adjectives" style="height: 100%;">
+            <label>
+              <input type="radio" name = "template4" value = "{{choices4}}" required/>
+              <p>{{choices4|safe}}</p>
+            </label>
+          </div>
+          {%endfor%}
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col adjsSpace" style="width:100%;">
+          {%for choices5 in question5%}
+          <div class="adjectives">
+            <label>
+              <input type="radio" name = "template5" value = "{{choices5}}" required/>
+              <p>{{choices5|safe}}</p>
+            </label>
+          </div>
+          {%endfor%}
+        </div>
+      </div>
+      <br>
+      <div class="submitButton">
+          <input type="submit" value="Submit">
+      </div>
+    </div>
+
+
+  </form>
+
+  <br><br><br>
+
+  <footer>
+    <div class="row">
+      <div class="col footerCol">
+        <h4>The Team (Google CSSI) &copy; 2019. All Rights Reserved.</h4>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
