@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+}
+body {
+  /* width: 100%; */
+  background: #c0c0aa;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.page {
+  display: block;
+  align-items: center;
+  justify-content: center }
+
+a, button, input[type=submit]{
+  text-decoration: none;
+  background-color: white;
+  color: #0babb8;
+  border: 1px solid #0babb8;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+a:hover, button:hover, input[type=submit]:hover{
+  color: white;
+  background-color: #0babb8;
+  border: 1px solid #0babb8;
+}
+
+/* HIDE RADIO */
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+input[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+input[type=radio]:checked + img {
+  outline: 2px solid tomato;
+}
+
+::placeholder {
+  color: #0babb8;
+}
+
+input[type=text] {
+  background-color: white;
+  color: #0babb8;
+  border: 1px solid #0babb8;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+
+.content {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+}
+
+.memeContainer {
+  position: relative;
+  /* text-align: center; */
+  color: white;
+  margin: 15px;
+  padding: 0px 10px;
+  color: white;
+  border-radius: 5px;
+  /* background-color: tomato; */
+  /* padding: 10px; */
+  /* text-align: center; */
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}

@@ -1,0 +1,31 @@
+<h2>{{line1}}</h2>
+<h2>{{line2}}</h2>
+<a href="/about">About</a>
+
+<h2>
+  {% if isOn %}
+    Oh It's on!
+  {% else %}
+    Oh I guess it's not on
+  {% endif %}
+</h2>
+
+{% for food in myFavs %}
+<br>{{loop.index0}} {{food}}<br>
+{% endfor %}
+<br>
+{{new_dict["test0"]}}
+{{new_dict["test1"]}}
+<br><br>
+Lego:
+<br><br>Color: {{redBrick.color}}
+<br>Number of Circles: {{redBrick.numCircles}}
+
+my_template_dict = {
+    "line1": "This is the value for line 1",
+    "line2": "The other value for line 2",
+    "isOn": True,
+    "myFavs": ["fried rice", "sushi", "fettucini alfredo"],
+    "new_dict": {"test0": 0, "test1": 1},
+    "redBrick": Lego("red", "6")
+}

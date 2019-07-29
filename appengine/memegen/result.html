@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome to Memegen</title>
+  </head>
+  <body>
+    <h1>Here is your Meme</h1>
+    <div class="memeContainer">
+      <img src="{{url}}" alt="" height="200px">
+      <div class="top-left" style="font-weight: bold; text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);">
+        {{top}}
+      </div>
+      <div class="bottom-left" style="font-weight: bold; text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);">
+        {{bottom}}
+      </div>
+    </div>
+
+    <br><br>
+
+    <a href="/">New Meme</a>
+    <br><br><br>
+    <a href="/allMemes">All Memes Created</a>
+
+  </body>
+</html>
+
+<!-- curl -d 'template_id=102156234&username=googlecssi&password=12345678&text0=hey&text1=bye' https://api.imgflip.com/caption_image -->

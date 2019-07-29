@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="recent" style="text-align: center;">
+      <h2>Recent Memes</h2>
+      <a href="/">New Meme</a>
+      <br><br>
+      <div class="content">
+        {% for i in memes %}
+        <div class="memeContainer">
+          <img src={{i.imgURL}} alt="" height="150px;">
+          <div class="top-left" style="font-weight: bold; text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);">
+            {{i.top}}
+          </div>
+          <div class="bottom-left" style="font-weight: bold; text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);">
+            {{i.bottom}}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </body>
+</html>

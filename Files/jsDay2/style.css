@@ -1,0 +1,17 @@
+.post {
+  display: inline;
+}
+
+#like_button {
+  font-size: 18px;
+  background-color: #4050dd;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: 1px solid #4050dd;
+}
+
+#like_button:hover {
+  background-color: white;
+  color: #4050dd;
+}

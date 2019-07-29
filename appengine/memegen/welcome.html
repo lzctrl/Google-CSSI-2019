@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome to Memegen</title>
+  </head>
+  <body style="text-align: center;">
+    <div class="page">
+      <h1 style="color: white;">Meme Generator</h1>
+      <!-- <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/504/739/5c0.jpg" alt="" height="150px" width="250px"> -->
+      <h2 style="color: white;">Welcome to the best Meme Generator!</h2>
+
+      <form method="post" action="/result" name="memeGenForm">
+        {% for url in imgs %}
+          <label>
+            <input type="radio" name="template" value="{{url}}" required/>
+            <img src="{{url}}" alt="" height="150px;">
+          </label>
+          {% endfor %}
+        <br><br>
+        <input id="topLine" type="text" name="top_line" value="" placeholder="Top Line" required>
+        &nbsp;
+        <input type="text" name="bottom_line" value="" placeholder="Bottom Line">
+        <br><br>
+        <input type="submit" value="GENERATE">
+      </form>
+      <br><br>
+      <a href="/allMemes">ALL MEMES</a>
+    </div>
+
+  </body>
+</html>
